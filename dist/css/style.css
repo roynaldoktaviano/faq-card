@@ -1,5 +1,4 @@
 html {
-  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
@@ -29,6 +28,7 @@ hr {
 .faq {
   text-align: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 .faq img {
@@ -39,14 +39,15 @@ hr {
 .faq-content {
   background-color: white;
   margin: auto;
+  margin-bottom: 25%;
   width: 330px;
-  height: 535px;
   padding-right: 25px;
   padding-left: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 24px;
   color: #1d1e35;
+  padding-bottom: 40px;
 }
 
 .faq-content img {
@@ -57,9 +58,11 @@ hr {
 .faq-content h1 {
   font-weight: bold;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .faq-content .text {
+  margin-top: 20px;
   font-size: 13px;
   cursor: pointer;
 }
@@ -94,6 +97,11 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.faq-content .text .title .arrow-icon {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
@@ -104,6 +112,7 @@ hr {
 
 .faq-content .text .desc {
   position: relative;
+  font-size: 12px;
   text-align: left;
   line-height: 1.5;
   color: #787887;
@@ -111,7 +120,12 @@ hr {
   top: -20px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.attribution {
+  margin-top: 10px;
+  background: none;
 }
 /*# sourceMappingURL=style.css.map */
