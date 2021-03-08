@@ -12,3 +12,14 @@ body {
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
+
+a,a:active,a:hover {
+    width: fit-content;
+    text-decoration: none;
+    color: $veryDarkBlue;
+}
+
+hr {
+    opacity: 0.5;
+    // margin-top: -5px;
+}

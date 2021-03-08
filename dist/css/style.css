@@ -14,6 +14,18 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+a, a:active, a:hover {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color: #1d1e35;
+}
+
+hr {
+  opacity: 0.5;
+}
+
 .faq {
   text-align: center;
   position: relative;
@@ -29,7 +41,12 @@ body {
   margin: auto;
   width: 330px;
   height: 535px;
+  padding-right: 25px;
+  padding-left: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 24px;
+  color: #1d1e35;
 }
 
 .faq-content img {
@@ -38,7 +55,63 @@ body {
 }
 
 .faq-content h1 {
-  font-weight: 700;
+  font-weight: bold;
   margin-top: 40px;
+}
+
+.faq-content .text {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.faq-content .text:hover .title {
+  color: #f47c57;
+}
+
+.faq-content .text.open .title {
+  font-weight: 700;
+}
+
+.faq-content .text.open .title .arrow-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq-content .text.open .desc {
+  height: 100%;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.faq-content .text .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.faq-content .text .title p {
+  display: inline;
+}
+
+.faq-content .text .desc {
+  position: relative;
+  text-align: left;
+  line-height: 1.5;
+  color: #787887;
+  height: 0;
+  top: -20px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
