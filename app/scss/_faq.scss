@@ -1,0 +1,27 @@
+.faq {
+    text-align: center;
+    position: relative;
+
+    img {
+        position: relative;
+        top: 5.625rem;
+    }
+
+    &-content{
+        background-color: white;
+        margin: auto;
+        width: 330px;
+        height: 535px;
+        border-radius: 24px;
+
+        img {
+            position: relative;
+            top: 0;
+        }
+
+        h1 {
+            font-weight: 700;
+            margin-top: 40px;
+        }
+    }
+}
